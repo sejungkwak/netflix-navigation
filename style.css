@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: 'Mulish', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 320px;
+	height: 100vh;
+	margin: 0;
+	position: relative;
+}
+
+.container {
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 1.1rem;
+	margin: 0;
+}
+
+.open {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	font-size: 1.3rem;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.close {
+	position: absolute;
+	top: 1.5rem;
+	right: 1rem;
+	font-size: 1.3rem;
+	background-color: transparent;
+	color: rgba(0,0,0,0.5);
+	border: none;
+	cursor: pointer;
+}
+
+.black {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	width: 320px;
+	height: 100vh;
+	transform: translateX(-320px);
+	transition: transform 500ms ease;
+}
+
+.red {
+	background-color: red;
+	width: 300px;
+	height: 100vh;
+	transform: translateX(-320px);
+	transition: transform 500ms ease;
+}
+
+.white {
+	background-color: #fff;
+	width: 280px;
+	height: 100vh;
+	position: relative;
+	transform: translateX(-320px);
+	transition: transform 500ms ease;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 1rem;
+}
+
+nav ul li {
+	margin-top: 1.5rem;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+
+nav ul li ul {
+	padding-top: 0;
+}
+
+nav ul img {
+	transform: translateX(-0.7rem);
+}
